@@ -28,6 +28,7 @@ nav {
 }
 
 .menu-item {
+    position: relative;
     color: #1b3c59;
     padding: 0 40px;
     text-transform: uppercase;
@@ -42,7 +43,12 @@ nav {
 }
 
 header .dropdown-menu {
+    position: absolute;
     display: none;
+}
+
+.visible {
+    display: block;
 }
 
 header .dropdown-menu-item {
