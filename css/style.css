@@ -22,24 +22,29 @@ header {
     margin-left: 15px;
 }
 
-.header-right li {
-    color: #1b3c59;
-    list-style: none;
-    display: inline;
-    margin-top: 10px;
-    padding: 0 20px 25px 20px;
-    line-height: 90px;
+nav {
+    display: flex;
+    align-items: center;
 }
 
-.header-right li:hover:not(:last-child) {
+.menu-item {
+    color: #1b3c59;
+    padding: 0 40px;
+    text-transform: uppercase;
+}
+
+.menu-item:hover {
     border-bottom: 2px solid #61ce4e;
 }
 
-header button {
-    color: white;
-    background-color: #61ce4e;
-    margin-left: 40px;
-    padding: 15px 35px;
-    border-radius: 5px;
-    display: inline;
+.menu-item > a {
+    line-height: 90px;
+}
+
+header .dropdown-menu {
+    display: none;
+}
+
+header .dropdown-menu-item {
+    margin: 10px 0px;
 }
